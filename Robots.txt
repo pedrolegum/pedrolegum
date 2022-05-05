@@ -1,0 +1,38 @@
+Robots.txt
+
+Iniciamos nossa analise procurando o arquivo Robots.txt, normalmente é encontrado na raiz do site: www.alvo.com/robots.txt
+
+Para que buscadores como por exemplo Google, Bing, DuckDuckGo apresentem seus resultados de termos procurados é necessário que sejam
+voltadas informações das páginas publicadas. Este processo de busca e indexação (categorização) é realizada através de programas
+chamados crawlers ou webcrawlers.
+
+É comum que estes programas encontrem páginas internas de login, que listam todos os documentos de uma pasta e até arquivos específicos
+hospedados.
+
+Para evitar esta indexação indesejada é possível criar um arquivo na raiz do site chamado robots.txt com diretivas de bloqueios de coleta de
+informações, evitando e exposições indesejadas de partes mais sensíveis de sistemas Web.
+Para um analista de segurança/atacante pode ser uma boa fonte de informações onde são as áreas sensíveis/ocultas do site é que merecem
+atenção.
+
+Exemplos:
+  User-agent: *
+  Disallow: /admin
+  Disallow: /wp-admin
+
+Neste exemplo vemos, para qualquer User-Agent não indexar as pastas admin e wp-admin, e como pesquisa vale a pena acessar ou tentar
+explorar essa área do site mais a fundo com o objetivo de obter acessos/informações restritas.
+
+Para defender uma aplicação que está exposta na internet, tendo em mente que os atacantes podem usar as informações contidas dentro do
+arquivo robots é necessário fortificar as defesas dentro dessas áreas justamente por conta de sua exposição e risco.
+
+A indexação de páginas web são importantes para o negócio e muitas vezes bloquear toda aplicação prejudica os negócios. Uma boa prática
+seria seguir um conceito usado em filtros de acesso á internet, configuração de firewalls que é o bloqueio de todo conteúdo e a liberação
+somente de recursos necessários.
+
+  User-agent: *
+  Disallow: *
+  Allow: /home
+  Allow: /produtos
+
+Para entender melhor como os bots/crawlers do Google funcionam:
+  https://developers.google.com/search/docs/advanced/robots/robots_txt?hl=pt-br
