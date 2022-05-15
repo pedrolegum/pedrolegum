@@ -6,3 +6,4 @@
 - 📫 How to reach me legum.pedro@gmail.com
       </br></br><h3><span style="padding-left:5em;">Articles:</span></h3>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://medium.com/@peter.analyst/843e04cae360">How to manage Robots.txt files</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://medium.com/@peter.analyst/why-enumerate-folders-and-files-a-valuable-simple-technic-34c55abdda8a">Why enumerate folders and files - A valuable simple technic</a>
